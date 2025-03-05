@@ -16,4 +16,6 @@ class MLP:
         self.l2 = nn.Linear(in_features * 2, out_features)
 
     def __call__(self, inputs: Tensor):
-        return self.l1(inputs).sigmoid()
+        outputs = self.l1(inputs).sigmoid()
+        outputs = self.l2(outputs).sigmoid()
+        return outputs
