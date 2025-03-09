@@ -1,0 +1,1 @@
+This dataset was obtained from https://github.com/karpathy/char-rnn/blob/master/data/tinyshakespeare/input.txt
